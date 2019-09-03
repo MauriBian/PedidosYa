@@ -1,0 +1,27 @@
+#cbc{
+    border-radius:30px;
+}
+
+.CreditCard{
+    margin-left: 90px
+}
+
+.MercadoPago{
+    margin-left: 50px
+}
+
+#ctcb{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#ctcb2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.titulo{
+    color:darkcyan;
+    font-size: 30px;
+    margin-bottom: 10px
+}

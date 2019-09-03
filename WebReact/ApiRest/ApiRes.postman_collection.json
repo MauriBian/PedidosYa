@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "948c50cf-3432-4aa7-9a44-ef9274390f14",
+		"name": "ApiRes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST/  login -ricardo -123",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"username\" : \"ricardo\", \n\t\"password\" : \"123\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/ login -nestor -nestor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"username\" : \"nestor\", \n\t\"password\" : \"nestor\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/ register -pepe -12345",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userName\": \"pepe\",\n  \"email\": \"pepe@pepe.com\",\n  \"password\": \"123\",\n  \"address\": \"Calle falsa 123\",\n  \"coord\": {\n    \"latitude\": 123,\n    \"longitude\": -123\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/ deliver",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"restaurantId\" : 8,\n\t\"menus\" : [],\n\t\"paymentMethod\" : \"CreditCard\",\n\t\"destination\" : {\n\t\t\"latitude\" : 11,\n\t\t\"longitude\" : 12,\n\t\t\"name\" : \"Florencio Varela\"\n\t}\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/deliver",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"deliver"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /deliver/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"rating\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/deliver/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"deliver",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/ user 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/ restaurant 8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/restaurant/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"restaurant",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/ search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Perro",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "12",
+							"disabled": true
+						},
+						{
+							"key": "long",
+							"value": "12",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

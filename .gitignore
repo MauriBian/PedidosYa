@@ -1,0 +1,12 @@
+.classpath
+.settings
+.project
+/target
+.idea
+TP1/.idea
+TP1/target
+TP1Arena/target
+TP1Arena/.idea
+Web/ApiRest/target/
+
+

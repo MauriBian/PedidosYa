@@ -1,0 +1,59 @@
+
+.p-3 {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+.h2{
+        margin-top: 30px;
+        margin-left: 50px
+}
+
+.card-title{
+        width: 10rem;
+}
+
+.card-text{
+        padding-right: 1045
+}
+
+.NavigationBar{
+        margin-left: 8px;
+        margin-right: 450px;
+        margin-top: 200px;
+        background-color:rgba(178, 34, 34, 0.8);
+        border-style: solid;
+
+}
+
+button {
+        margin-right: 10px;
+}
+
+.rounded-circle{
+        width: 50px;
+        height: 50px;
+}
+
+.card{
+        max-width: 5000px; 
+        min-width: 500px;
+}
+
+.Calificacion{
+        font-size: 25px;
+        margin-left: 600px
+}
+.containerSearch{
+        
+        margin-left: 300px;
+        margin-right: 300px;
+}
+#bComprar{
+        margin-left: 450px;
+        background-color: cadetblue;
+}
+#finalizar{
+        height: 50px; 
+}
